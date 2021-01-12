@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey1"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_line_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp1"
+        android:layout_marginTop="@dimen/dp15"
+        android:background="@color/colorGrey1" />
+
+    <LinearLayout
+        android:id="@+id/ln_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edt_status_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:background="@drawable/bg_white_button_r30"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:drawablePadding="@dimen/dp10"
+            android:fontFamily="@font/gilroy_medium"
+            android:hint="@string/search_text"
+            android:imeOptions="actionSearch"
+            android:inputType="textMultiLine"
+            android:minHeight="@dimen/dp50"
+            android:padding="@dimen/dp15"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="@dimen/dp45"
+                android:layout_height="@dimen/dp45"
+                android:background="@drawable/ic_create_messagese"
+                android:backgroundTint="@color/color_main" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp15"
+        android:layout_marginTop="@dimen/dp15"
+        android:layout_marginEnd="@dimen/dp15" />
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300"
+        android:background="@color/color_main" />
+
+  <!--  <ImageView
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/ic_back_1" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            style="@style/TitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/title_sign_up" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp30"
+            app:cardCornerRadius="@dimen/dp30"
+            app:cardElevation="@dimen/dp10"
+            app:cardPreventCornerOverlap="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_white_button_r30"
+                android:orientation="vertical"
+                android:padding="@dimen/dp40">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_input_name"
+                        style="@style/TextInputStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/username_hint">
+
+                        <EditText
+                            android:id="@+id/edit_text_name"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp70"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPersonName"
+                            android:maxLength="8"
+                            android:paddingHorizontal="@dimen/dp20" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/text_input_display_name"
+                        style="@style/TextInputStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/display_name">
+
+                        <EditText
+                            android:id="@+id/edit_text_display_name"
+                            style="@style/EditTextStyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp70"
+                            android:imeOptions="actionNext"
+                            android:inputType="textMultiLine"
+                            android:maxLength="28"
+                            android:paddingHorizontal="@dimen/dp20" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <include layout="@layout/email_and_password_layout" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/dp20"
+                    android:paddingBottom="@dimen/dp20">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_terms_and_conditions"
+                        style="@style/SubTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/i_agree_text"
+                        android:textColor="@color/colorSimpleText"
+                        android:theme="@style/CheckBoxStyle" />
+
+                    <TextView
+                        android:id="@+id/text_view_term_and_conditions"
+                        style="@style/SubTextViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/term_amp_conditions_text"
+                        app:drawableBottomCompat="@drawable/line_drawable" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button_create_account"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp70"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:text="@string/action_create_account"
+                    android:theme="@style/button_theme_color_main" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:padding="@dimen/dp40">
+
+            <include
+                layout="@layout/bottom_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

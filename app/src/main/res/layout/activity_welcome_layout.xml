@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="@dimen/dp40">
+
+    <include
+        layout="@layout/include_icon_app_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_white_button_r30"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TitleTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_welcome_to_app"
+            android:textColor="@color/color_main" />
+
+        <TextView
+            style="@style/SubTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp20"
+            android:lineSpacingExtra="@dimen/dp20"
+            android:text="@string/content_text_view_of_welcome_screen"
+            android:textAlignment="inherit"
+            android:textColor="@color/colorSimpleText"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button_create_account_welcome"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp70"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="@string/action_create_account"
+            android:theme="@style/button_theme_color_main" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_welcome"
+        layout="@layout/bottom_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

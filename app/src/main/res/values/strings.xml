@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Viraly</string>
+    <string name="title_sign_in">Sign In</string>
+    <string name="title_sign_up">Sign Up</string>
+    <string name="name_hint">Name</string>
+    <string name="display_name">Display Name</string>
+    <string name="username_hint">Username</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="action_remember_me">Remember Me</string>
+    <string name="action_forgot_password">Forgot Password?</string>
+    <string name="action_login_account">Log In</string>
+    <string name="action_create_account">Create account</string>
+    <string name="action_check_email_account">Check verify account</string>
+    <string name="successfully_verify_status">Verify account successfully</string>
+    <string name="failed_verify_status">Verify account failed</string>
+    <string name="unknown_account">Unknown account. Please enter again!</string>
+    <string name="empty_email">Error: The username filed is empty.</string>
+    <string name="empty_password">Error: The password filed is empty.</string>
+    <string name="empty_user_name">Error: The user name filed is empty.</string>
+    <string name="empty_display_name">Error: The display name filed is empty.</string>
+    <string name="empty_error">Error: The filed is empty</string>
+    <string name="empty_username_and_password">Error: The username filed is empty.\nError: The password filed is empty.</string>
+    <string name="i_agree_text">I agree to the\u0020</string>
+    <string name="term_amp_conditions_text"><![CDATA[term & conditions]]></string>
+    <string name="not_a_member_text">Not a member?  \u0020</string>
+    <string name="sign_up_now_text">Sign up now</string>
+    <string name="cant_connect_to_server_status">Can\'t Connect To Sever, Please Try Again!</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="title_welcome_to_app">Welcome to Viraly</string>
+    <string name="sign_up_with_google">Sign up with Google</string>
+    <string name="content_text_view_of_welcome_screen">This is a social network to help you share your photos and videos with everyone!</string>
+    <string name="have_account">Already have an account?</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_profile">My Profile</string>
+    <string name="my_inbox">My Inbox</string>
+    <string name="my_photos">My Photos</string>
+    <string name="my_connection">My Connection</string>
+    <string name="my_timeline">My Timeline</string>
+    <string name="my_setting">My Setting</string>
+    <string name="log_out">Log Out</string>
+
+<!--text content-->
+    <string name="news_feed_text">News Feed</string>
+    <string name="notification_text">Notification</string>
+    <string name="setting_text">Setting</string>
+    <string name="status_hint_text">Write here something…</string>
+    <string name="public_text">Public</string>
+    <string name="post_update_text">Post Update</string>
+    <string name="post_text">Post</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="infor_content_text">2020 - Viraly Team</string>
+    <string name="support_viraly_com_text">Support@viraly.com</string>
+    <string name="like_text">Like</string>
+    <string name="unlike_text">Unlike</string>
+    <string name="comment_text">Comment...</string>
+    <string name="edit_text">Edit</string>
+    <string name="delete_text">Delete</string>
+    <string name="you_like_this_text">You like this</string>
+    <string name="comment">Comment</string>
+    <string name="reply_text">Reply</string>
+    <string name="report_text">Report</string>
+    <string name="member_text">Member</string>
+    <string name="follower_text">follower</string>
+    <string name="following_text">following</string>
+    <string name="gmail_text">gmail</string>
+    <string name="being_the_first_comment_text">Being the first comment</string>
+    <string name="search_text">Search...</string>
+    <string name="errorServer_text">Error by server</string>
+    <string name="account_baned_text">Your account has been temporarily disabled!</string>
+    <string name="delete_post_text">Are you sure you want to delete this post?</string>
+    <string name="delete_comment_text">Are you sure you want to delete this comment?</string>
+    <string name="delete_post_title_text">Delete Post</string>
+    <string name="delete_comment_title_text">Delete Comment</string>
+    <string name="pls_sigin_text">Please Sign In</string>
+    <string name="status_code">Status code %s</string>
+    <string name="error_empty">The filed:%s %s %s %s %s empty</string>
+    <string name="create_successfully">Create Successfully</string>
+    <string name="ok_txt">OK</string>
+    <string name="cancel_txt">Cancel</string>
+    <string name="server_error">Server error. Please try again later</string>
+    <string name="invalid_txt">Please check your user information!</string>
+    <string name="error_txt">Error</string>
+    <string name="invalid_email_txt">Your email is invalid, please enter again!</string>
+    <string name="server_error_txt">Infor</string>
+
+
+</resources>

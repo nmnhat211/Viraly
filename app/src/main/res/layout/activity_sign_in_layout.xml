@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/dp40"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/include_icon_app_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp30">
+
+            <TextView
+                style="@style/TitleTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title_sign_in"
+                android:textColor="@color/color_main" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gilroy_regular"
+                    android:text="@string/not_a_member_text"
+                    android:textColor="@color/colorSimpleText" />
+
+                <TextView
+                    android:id="@+id/text_view_sign_up_now"
+                    style="@style/SubTextViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up_now_text" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/email_and_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp40" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp40">
+
+<!--            <CheckBox-->
+<!--                android:id="@+id/cbx_remember"-->
+<!--                style="@style/SubTextViewStyle"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/action_remember_me"-->
+<!--                android:textColor="@color/colorSimpleText"-->
+<!--                android:theme="@style/CheckBoxStyle" />-->
+
+            <TextView
+                android:id="@+id/text_view_forgot_password"
+                style="@style/SubTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@string/action_forgot_password" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_login_account"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp70"
+            android:text="@string/action_login_account"
+            android:theme="@style/button_theme_color_main" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/bottom_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>

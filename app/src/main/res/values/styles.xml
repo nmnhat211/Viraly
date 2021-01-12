@@ -1,0 +1,76 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorSimpleText</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--CheckBox theme-->
+    <style name="CheckBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorControlNormal">@color/colorSimpleText</item>
+        <item name="colorControlActivated">@color/color_main</item>
+    </style>
+
+
+    <style name="SubTextViewStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/selectors_color</item>
+        <item name="android:fontFamily">@font/gilroy_regular</item>
+
+    </style>
+
+    <style name="TitleTextViewStyle">
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LabelTextInputStyle">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="errorEnabled">true</item>
+        <item name="android:textColorHint">@color/color_main</item>
+        <item name="hintTextAppearance">@style/LabelTextInputStyle</item>
+        <item name="boxStrokeColor">@color/box_stroke_color</item>
+        <item name="boxBackgroundColor">@color/color_background</item>
+    </style>
+
+
+    <!--EditText style  -->
+    <style name="EditTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textCursorDrawable">@drawable/cursor_edit_text_shape</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+
+    <!--Button theme-->
+    <style name="button_theme_color_main" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorAccent">@color/color_main</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/gilroy_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="button_theme_color_white" parent="button_theme_color_main">
+        <item name="colorAccent">@color/color_background1</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+
+    <style name="AppThemeToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp300"
+        android:background="@color/color_main" />
+
+    <ImageView
+        android:id="@+id/iv_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="@dimen/dp60" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_background"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cstrn_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_image"
+                android:layout_width="@dimen/dp280"
+                android:layout_height="@dimen/dp280"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_avatar_user"
+                    android:layout_width="@dimen/dp280"
+                    android:layout_height="@dimen/dp280"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:background="@drawable/ic_camera"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/card_view_image"
+                app:layout_constraintLeft_toLeftOf="@+id/card_view_image"
+                app:layout_constraintRight_toRightOf="@+id/card_view_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_name_user_new_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:fontFamily="@font/gilroy_bold"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="adsadasd asdasd asdasdasd asdasd sd"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/bg_red_buttom_r30"
+            android:fontFamily="@font/gilroy_bold"
+            android:paddingStart="@dimen/dp20"
+            android:paddingTop="@dimen/dp5"
+            android:paddingEnd="@dimen/dp20"
+            android:paddingBottom="@dimen/dp5"
+            android:text="@string/member_text"
+            android:textColor="@color/colorWhite"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_email_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp20"
+            android:fontFamily="@font/gilroy_light_italic"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/gmail_text"
+            android:textColor="@color/colorGrey"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_follower_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gilroy_regular"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/colorGrey"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp10"
+                android:fontFamily="@font/gilroy_medium"
+                android:singleLine="true"
+                android:text="@string/follower_text"
+                android:textColor="@color/colorGrey"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/tv_following_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp30"
+                android:fontFamily="@font/gilroy_regular"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="@color/colorGrey"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp10"
+                android:fontFamily="@font/gilroy_medium"
+                android:singleLine="true"
+                android:text="@string/follower_text"
+                android:textColor="@color/colorGrey"
+                android:textSize="23sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

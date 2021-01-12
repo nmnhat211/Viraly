@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp15"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar_user"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="@dimen/dp1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="@dimen/dp15"
+            android:layout_height="@dimen/dp15"
+            android:background="@drawable/bg_green_oval"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_avatar_user"
+            app:layout_constraintRight_toRightOf="@id/iv_avatar_user" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <EditText
+        android:layout_weight="9"
+        android:id="@+id/edt_status_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grey_bttuon_r30"
+        android:fontFamily="@font/gilroy_medium"
+        android:hint="@string/comment_text"
+        android:imeOptions="actionDone"
+        android:layout_marginLeft="@dimen/dp15"
+        android:inputType="textMultiLine"
+        android:minHeight="@dimen/dp50"
+        android:padding="@dimen/dp15"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp15"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:background="@drawable/img_sent"
+            android:backgroundTint="@color/colorGrey" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
